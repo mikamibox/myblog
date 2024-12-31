@@ -1,7 +1,7 @@
 ---
 title: "手打ちサイトでRSS対応の更新履歴作った"
 date: "2024-12-30T12:03:00.000Z"
-lastmod: "2024-12-31T09:11:00.000Z"
+lastmod: "2024-12-31T17:23:00.000Z"
 draft: false
 featuredImage: "https://www.notion.so/images/page-cover/gradients_8.png"
 series: []
@@ -14,11 +14,13 @@ tags:
   - "python"
 categories:
   - "Tool"
+summary: "RSSフィードを導入して自サイトの更新履歴を自動化。AIを活用し、jQueryやPythonスクリプトで効率的な作業環境を構築しました。更\
+  新内容を簡単に反映できる仕組みを解説しています。"
 NOTION_METADATA:
   object: "page"
   id: "16c68b3f-4dba-80fc-8c70-d33ebdf620fa"
   created_time: "2024-12-30T12:03:00.000Z"
-  last_edited_time: "2024-12-31T09:11:00.000Z"
+  last_edited_time: "2024-12-31T17:23:00.000Z"
   created_by:
     object: "user"
     id: "145d872b-594c-8199-9dd5-00029abc4c01"
@@ -90,7 +92,22 @@ NOTION_METADATA:
     summary:
       id: "x%3AlD"
       type: "rich_text"
-      rich_text: []
+      rich_text:
+        - type: "text"
+          text:
+            content: "RSSフィードを導入して自サイトの更新履歴を自動化。AIを活用し、jQueryやPythonスクリプトで効率的な作業環境を構築しました。更\
+              新内容を簡単に反映できる仕組みを解説しています。"
+            link: null
+          annotations:
+            bold: false
+            italic: false
+            strikethrough: false
+            underline: false
+            code: false
+            color: "default"
+          plain_text: "RSSフィードを導入して自サイトの更新履歴を自動化。AIを活用し、jQueryやPythonスクリプトで効率的な作業環境を構築しまし\
+            た。更新内容を簡単に反映できる仕組みを解説しています。"
+          href: null
     Name:
       id: "title"
       type: "title"

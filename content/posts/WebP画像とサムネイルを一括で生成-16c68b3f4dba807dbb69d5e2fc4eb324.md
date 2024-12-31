@@ -1,7 +1,7 @@
 ---
 title: "WebP画像とサムネイルを一括で生成"
 date: "2024-12-30T12:27:00.000Z"
-lastmod: "2024-12-31T09:11:00.000Z"
+lastmod: "2024-12-31T17:21:00.000Z"
 draft: false
 featuredImage: "https://www.notion.so/images/page-cover/gradients_8.png"
 series: []
@@ -12,11 +12,13 @@ tags:
   - "Node.js"
 categories:
   - "Tool"
+summary: "Node.js の「sharp」を使った画像変換スクリプトを作成しました。このスクリプトでは、フォルダ内の画像を一括で WebP
+  形式に変換したり、指定サイズへのリサイズやサムネイルの生成も簡単に行えます。"
 NOTION_METADATA:
   object: "page"
   id: "16c68b3f-4dba-807d-bb69-d5e2fc4eb324"
   created_time: "2024-12-30T12:27:00.000Z"
-  last_edited_time: "2024-12-31T09:11:00.000Z"
+  last_edited_time: "2024-12-31T17:21:00.000Z"
   created_by:
     object: "user"
     id: "145d872b-594c-8199-9dd5-00029abc4c01"
@@ -82,7 +84,22 @@ NOTION_METADATA:
     summary:
       id: "x%3AlD"
       type: "rich_text"
-      rich_text: []
+      rich_text:
+        - type: "text"
+          text:
+            content: "Node.js の「sharp」を使った画像変換スクリプトを作成しました。このスクリプトでは、フォルダ内の画像を一括で WebP
+              形式に変換したり、指定サイズへのリサイズやサムネイルの生成も簡単に行えます。"
+            link: null
+          annotations:
+            bold: false
+            italic: false
+            strikethrough: false
+            underline: false
+            code: false
+            color: "default"
+          plain_text: "Node.js の「sharp」を使った画像変換スクリプトを作成しました。このスクリプトでは、フォルダ内の画像を一括で WebP
+            形式に変換したり、指定サイズへのリサイズやサムネイルの生成も簡単に行えます。"
+          href: null
     Name:
       id: "title"
       type: "title"
