@@ -1,9 +1,8 @@
-baseURL = "https://example.org/"
+baseURL = "https://mikamibox.pages.dev/"
 languageCode = "ja-JP"
 title = "個人的な備忘録"
 theme = "PaperMod"
 paginate = 5
-
 
 defaultContentLanguage = 'ja'
 
