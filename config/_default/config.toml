@@ -1,4 +1,4 @@
-baseURL = "https://example.org/"
+baseURL = "https://mikamibox.pages.dev/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "個人的な備忘録"
 theme = "DoIt"
