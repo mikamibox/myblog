@@ -4,7 +4,7 @@ const userConfig: UserConfig = {
     base_url: "https://mikamibox.pages.dev/",
     mount: {
         manual: false,
-        page_url: 'https://www.notion.so/Notion-Hugo-16c68b3f4dba80b3813eedbdfa08ccfb?pvs=4',
+        page_url: 'https://tropical-kitchen-d64.notion.site/Notion-Hugo-16c68b3f4dba80b3813eedbdfa08ccfb',
         pages: [
             // {
             //     page_id: '<page_id>',
