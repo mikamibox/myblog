@@ -1,26 +1,25 @@
 ---
 title: "Markdown"
-date: "2022-09-02T18:27:00.000Z"
-lastmod: "2024-12-20T17:56:00.000Z"
-draft: false
+date: "2024-12-30T11:53:00.000Z"
+lastmod: "2024-12-30T12:23:00.000Z"
+draft: true
 featuredImage: "https://www.notion.so/images/page-cover/woodcuts_1.jpg"
 series: []
-authors:
-  - "PCloud"
+authors: []
 custom-front-matter: "hello"
 tags: []
 categories: []
 NOTION_METADATA:
   object: "page"
-  id: "33dbd8d9-65f7-4930-a804-b8b50f375cbb"
-  created_time: "2022-09-02T18:27:00.000Z"
-  last_edited_time: "2024-12-20T17:56:00.000Z"
+  id: "16c68b3f-4dba-813b-8585-ff2fe4acbde3"
+  created_time: "2024-12-30T11:53:00.000Z"
+  last_edited_time: "2024-12-30T12:23:00.000Z"
   created_by:
     object: "user"
-    id: "657d1c71-eca5-475d-b9d3-3669efd38ab9"
+    id: "145d872b-594c-8199-9dd5-00029abc4c01"
   last_edited_by:
     object: "user"
-    id: "657d1c71-eca5-475d-b9d3-3669efd38ab9"
+    id: "145d872b-594c-8199-9dd5-00029abc4c01"
   cover:
     type: "external"
     external:
@@ -28,7 +27,7 @@ NOTION_METADATA:
   icon: null
   parent:
     type: "database_id"
-    database_id: "b7b1816c-05ec-4643-91c8-c111fa242985"
+    database_id: "16c68b3f-4dba-81c0-87d8-db446c050d07"
   archived: false
   in_trash: false
   properties:
@@ -39,18 +38,13 @@ NOTION_METADATA:
     draft:
       id: "JiWU"
       type: "checkbox"
-      checkbox: false
+      checkbox: true
     authors:
       id: "bK%3B%5B"
       type: "people"
       people:
         - object: "user"
           id: "657d1c71-eca5-475d-b9d3-3669efd38ab9"
-          name: "PCloud"
-          avatar_url: "https://s3-us-west-2.amazonaws.com/public.notion-static.com/1a0f7d\
-            04-9a04-49c9-9ac2-670b2bf4e33c/IMG_0309.jpg"
-          type: "person"
-          person: {}
     custom-front-matter:
       id: "c~kA"
       type: "rich_text"
@@ -78,8 +72,8 @@ NOTION_METADATA:
       multi_select: []
     Last edited time:
       id: "vbGE"
-      type: "last_edited_time"
-      last_edited_time: "2024-12-20T17:56:00.000Z"
+      type: "created_time"
+      created_time: "2024-12-30T11:53:00.000Z"
     summary:
       id: "x%3AlD"
       type: "rich_text"
@@ -101,8 +95,9 @@ NOTION_METADATA:
             color: "default"
           plain_text: "Markdown"
           href: null
-  url: "https://www.notion.so/Markdown-33dbd8d965f74930a804b8b50f375cbb"
-  public_url: "https://pcloud.notion.site/Markdown-33dbd8d965f74930a804b8b50f375cbb"
+  url: "https://www.notion.so/Markdown-16c68b3f4dba813b8585ff2fe4acbde3"
+  public_url: "https://tropical-kitchen-d64.notion.site/Markdown-16c68b3f4dba813b\
+    8585ff2fe4acbde3"
 MANAGED_BY_NOTION_HUGO: true
 
 ---
@@ -213,10 +208,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis commodo mau
 @2022-09-03T00:00:00.000+01:00 -> 2022-09-21T02:00:00.000+01:00 
 
 
-Hello @PCloud!
+Hello !
 
 
-[Markdown]({{% relref "Markdown-33dbd8d965f74930a804b8b50f375cbb.md" %}}) 
+[Markdown]({{% relref "Markdown-16c68b3f4dba813b8585ff2fe4acbde3.md" %}}) 
 
 
 ---
@@ -228,7 +223,7 @@ Hello @PCloud!
 ### Internal
 
 
-![](https://notion-hugo.pages.dev/api?block_id=8ea45705-f812-4bdc-a9b3-079730199436)
+![](https://mikamibox.pages.dev//api?block_id=16c68b3f-4dba-8178-ae15-c93983d9d447)
 
 
 ### External
@@ -256,10 +251,10 @@ File
 
 
 <video controls style="height:auto;width:100%;">
-  <source src="https://notion-hugo.pages.dev/api?block_id=666aae5b-9e73-44b4-b2f0-a4933e16bc88">
+  <source src="https://mikamibox.pages.dev//api?block_id=16c68b3f-4dba-817b-94c7-ce6dad751514">
   <p>
     Your browser does not support HTML5 video. Here is a
-    <a href="https://notion-hugo.pages.dev/api?block_id=666aae5b-9e73-44b4-b2f0-a4933e16bc88" download="https://notion-hugo.pages.dev/api?block_id=666aae5b-9e73-44b4-b2f0-a4933e16bc88">link to the video</a> instead.
+    <a href="https://mikamibox.pages.dev//api?block_id=16c68b3f-4dba-817b-94c7-ce6dad751514" download="https://mikamibox.pages.dev//api?block_id=16c68b3f-4dba-817b-94c7-ce6dad751514">link to the video</a> instead.
   </p>
 </video>
 
@@ -276,7 +271,7 @@ YouTube
 ## Audio
 
 
-<audio controls src="https://notion-hugo.pages.dev/api?block_id=1f7cdc13-5883-4349-b6c2-a9310f9a589e"></audio>
+<audio controls src="https://mikamibox.pages.dev//api?block_id=16c68b3f-4dba-81dd-848d-e4ce1826f434"></audio>
 
 
 ---
@@ -300,13 +295,13 @@ int main() {
 ## PDF
 
 
-<embed src="https://notion-hugo.pages.dev/api?block_id=3cb3a09f-e4dd-4ea3-b93d-40e497ace6d4" type="application/pdf" style="width: 100%;aspect-ratio: 2/3;height: auto;" />
+<embed src="https://mikamibox.pages.dev//api?block_id=16c68b3f-4dba-8156-a2c6-dc2082352d0e" type="application/pdf" style="width: 100%;aspect-ratio: 2/3;height: auto;" />
 
 
 ## File
 
 
-[Living-Guide.pdf](https://notion-hugo.pages.dev/api?block_id=72338466-bf1f-4670-926b-4a0796a7b4df)
+[Living-Guide.pdf](https://mikamibox.pages.dev//api?block_id=16c68b3f-4dba-81de-8203-da1591f30482)
 
 
 ---
