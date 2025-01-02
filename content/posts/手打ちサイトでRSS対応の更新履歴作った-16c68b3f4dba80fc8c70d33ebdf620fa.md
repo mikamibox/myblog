@@ -1,15 +1,14 @@
 ---
 title: "手打ちサイトでRSS対応の更新履歴作った"
 date: "2024-12-30T12:03:00.000Z"
-lastmod: "2024-12-31T17:23:00.000Z"
+lastmod: "2025-01-01T07:51:00.000Z"
 draft: false
-featuredImage: "https://www.notion.so/images/page-cover/gradients_8.png"
 series: []
 authors:
-  - "かめまめ"
+  - "三上五月"
 tags:
-  - "css"
-  - "html"
+  - "CSS"
+  - "HTML"
   - "Javascript"
   - "python"
 categories:
@@ -20,17 +19,14 @@ NOTION_METADATA:
   object: "page"
   id: "16c68b3f-4dba-80fc-8c70-d33ebdf620fa"
   created_time: "2024-12-30T12:03:00.000Z"
-  last_edited_time: "2024-12-31T17:23:00.000Z"
+  last_edited_time: "2025-01-01T07:51:00.000Z"
   created_by:
     object: "user"
     id: "145d872b-594c-8199-9dd5-00029abc4c01"
   last_edited_by:
     object: "user"
     id: "145d872b-594c-8199-9dd5-00029abc4c01"
-  cover:
-    type: "external"
-    external:
-      url: "https://www.notion.so/images/page-cover/gradients_8.png"
+  cover: null
   icon: null
   parent:
     type: "database_id"
@@ -52,9 +48,9 @@ NOTION_METADATA:
       people:
         - object: "user"
           id: "145d872b-594c-8199-9dd5-00029abc4c01"
-          name: "かめまめ"
-          avatar_url: "https://lh3.googleusercontent.com/a/ACg8ocI0BtYrLX2AZ6ScjdBk3Sj212\
-            roJ3oOclMY9oEcoOhy92sfI7o=s100"
+          name: "三上五月"
+          avatar_url: "https://s3-us-west-2.amazonaws.com/public.notion-static.com/aec83c\
+            0e-33e9-43fa-84d1-11a53e904aa5/user.png"
           type: "person"
           person:
             email: "kamemame.0515@gmail.com"
@@ -67,24 +63,24 @@ NOTION_METADATA:
       type: "multi_select"
       multi_select:
         - id: "2a3f5c1f-7046-4114-b81c-56205ffad525"
-          name: "css"
-          color: "default"
+          name: "CSS"
+          color: "blue"
         - id: "0c1693f1-186a-47c9-86d4-e5b3369da62f"
-          name: "html"
-          color: "yellow"
+          name: "HTML"
+          color: "orange"
         - id: "e30485aa-08ee-4ce8-9812-482ff4a56c2c"
           name: "Javascript"
-          color: "purple"
+          color: "yellow"
         - id: "8afe8bd4-4395-4f86-bce0-c2512047d3b5"
           name: "python"
-          color: "blue"
+          color: "yellow"
     categories:
       id: "nbY%3F"
       type: "multi_select"
       multi_select:
         - id: "bda43e76-13da-4025-8607-4343ad835e46"
           name: "Tool"
-          color: "purple"
+          color: "green"
     Last edited time:
       id: "vbGE"
       type: "created_time"
