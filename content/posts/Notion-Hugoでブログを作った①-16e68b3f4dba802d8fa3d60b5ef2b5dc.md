@@ -1,7 +1,7 @@
 ---
-title: "Notion-Hugoでブログを作った"
+title: "Notion-Hugoでブログを作った①"
 date: "2025-01-01T07:18:00.000Z"
-lastmod: "2025-01-01T08:16:00.000Z"
+lastmod: "2025-01-02T09:24:00.000Z"
 draft: true
 series: []
 authors:
@@ -19,7 +19,7 @@ NOTION_METADATA:
   object: "page"
   id: "16e68b3f-4dba-802d-8fa3-d60b5ef2b5dc"
   created_time: "2025-01-01T07:18:00.000Z"
-  last_edited_time: "2025-01-01T08:16:00.000Z"
+  last_edited_time: "2025-01-02T09:24:00.000Z"
   created_by:
     object: "user"
     id: "145d872b-594c-8199-9dd5-00029abc4c01"
@@ -101,7 +101,7 @@ NOTION_METADATA:
       title:
         - type: "text"
           text:
-            content: "Notion-Hugoでブログを作った"
+            content: "Notion-Hugoでブログを作った①"
             link: null
           annotations:
             bold: false
@@ -110,7 +110,7 @@ NOTION_METADATA:
             underline: false
             code: false
             color: "default"
-          plain_text: "Notion-Hugoでブログを作った"
+          plain_text: "Notion-Hugoでブログを作った①"
           href: null
   url: "https://www.notion.so/Notion-Hugo-16e68b3f4dba802d8fa3d60b5ef2b5dc"
   public_url: "https://tropical-kitchen-d64.notion.site/Notion-Hugo-16e68b3f4dba8\
@@ -140,4 +140,22 @@ Hugoでブログを書こう！と思ったきっかけがこの記事だった�
 1. FTPソフトでまとめてサーバーにアップロード
 
 という手順を踏んでいました。なんという面倒くささ。しかもここまでたどり着くまでに一ヶ月かかってます。**Hugo、全然簡単じゃねぇ。**
+
+
+テーマフォルダ内のcontentsフォルダとレイアウトフォルダ入れないとダメ
+
+
+go.modも
+
+
+画像も
+
+
+yamlとtomlの違い
+
+
+外部リンク設定
+
+
+custom.css　最悪テーマのcssをいじる
 
