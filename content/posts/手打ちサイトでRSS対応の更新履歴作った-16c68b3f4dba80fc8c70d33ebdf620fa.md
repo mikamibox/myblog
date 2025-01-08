@@ -1,7 +1,7 @@
 ---
 title: "手打ちサイトでRSS対応の更新履歴作った"
 date: "2024-12-30T12:03:00.000Z"
-lastmod: "2025-01-01T07:51:00.000Z"
+lastmod: "2025-01-07T14:17:00.000Z"
 draft: false
 series: []
 authors:
@@ -19,7 +19,7 @@ NOTION_METADATA:
   object: "page"
   id: "16c68b3f-4dba-80fc-8c70-d33ebdf620fa"
   created_time: "2024-12-30T12:03:00.000Z"
-  last_edited_time: "2025-01-01T07:51:00.000Z"
+  last_edited_time: "2025-01-07T14:17:00.000Z"
   created_by:
     object: "user"
     id: "145d872b-594c-8199-9dd5-00029abc4c01"
@@ -186,8 +186,6 @@ jQuery を丁度使ってたので jQuery の方を採用。
 同じ階層にある `rss.xml` の最新 3 件を `index.html` に jQuery を使って表示したいです。
 
 現在、更新履歴の HTML は以下の形式です：
-
-```html
 <section class="white-1">
  <h2 class="news">Update</h2>
   <dl class="news">
@@ -203,11 +201,9 @@ jQuery を丁度使ってたので jQuery の方を採用。
     <dd>更新内容</dd>
   </dl>
 </section>
-```
+
 
 `rss.xml` の内容は以下です：
-
-```xml
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
   <channel>
@@ -235,10 +231,9 @@ jQuery を丁度使ってたので jQuery の方を採用。
     </item>
   </channel>
 </rss>
-```
+
 
 jQuery を使った実装例を教えていただけますか？
-
 ```
 
 
