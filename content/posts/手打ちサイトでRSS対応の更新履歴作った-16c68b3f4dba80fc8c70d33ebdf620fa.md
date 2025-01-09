@@ -1,7 +1,7 @@
 ---
 title: "手打ちサイトでRSS対応の更新履歴作った"
 date: "2024-12-30T12:03:00.000Z"
-lastmod: "2025-01-07T14:17:00.000Z"
+lastmod: "2025-01-08T07:54:00.000Z"
 draft: false
 series: []
 authors:
@@ -19,7 +19,7 @@ NOTION_METADATA:
   object: "page"
   id: "16c68b3f-4dba-80fc-8c70-d33ebdf620fa"
   created_time: "2024-12-30T12:03:00.000Z"
-  last_edited_time: "2025-01-07T14:17:00.000Z"
+  last_edited_time: "2025-01-08T07:54:00.000Z"
   created_by:
     object: "user"
     id: "145d872b-594c-8199-9dd5-00029abc4c01"
@@ -328,80 +328,81 @@ def prettify_xml(xml_string):
     # minidomを使用して整形
     dom = xml.dom.minidom.parseString(xml_string)
     pretty_xml = dom.toprettyxml(indent='  ', encoding='utf-8').decode('utf-8')
-
+    
     # 空行を削除
-    lines = pretty_xml.split('\\n')
+    lines = pretty_xml.split('\n')
     # 空白行や空白文字のみの行を除去
     cleaned_lines = [line for line in lines if line.strip()]
     # 最初の行（XML宣言）を除去（後で追加するため）
     cleaned_lines = cleaned_lines[1:]
-
+    
     # 行を結合して返す
-    return '\\n'.join(cleaned_lines)
+    return '\n'.join(cleaned_lines)
 
 def insert_updates_to_rss(rss_file_path, update_file_path):
     try:
         # 既存のXMLファイルを文字列として読み込む
         with open(rss_file_path, 'r', encoding='utf-8') as f:
             xml_content = f.read()
-
+        
         # XMLパーサーを作成
         parser = ET.XMLParser(encoding='utf-8')
         tree = ET.fromstring(xml_content, parser=parser)
-
+        
         # channelタグを見つける
         channel = tree.find('channel')
         if channel is None:
             raise ValueError("Channel element not found in RSS")
-
+        
         # update.txtから更新情報を読み込む
         with open(update_file_path, 'r', encoding='utf-8') as f:
             updates = f.readlines()
-
+        
         # 現在時刻をRFC822フォーマットで取得
         current_time = datetime.now().strftime('%a, %d %b %Y %H:%M:%S +0900')
-
+        
         # channelの既存の要素を取得
         existing_items = channel.findall('item')
-
+        
         # 既存のitem要素を一時的に削除
         for item in existing_items:
             channel.remove(item)
-
+        
         # 新しいitem要素を追加
         for update in updates:
             update = update.strip()
             if update:
                 item = ET.SubElement(channel, 'item')
-
+                
                 title = ET.SubElement(item, 'title')
                 title.text = update
-
+                
                 pubdate = ET.SubElement(item, 'pubDate')
                 pubdate.text = current_time
-
+                
                 enclosure = ET.SubElement(item, 'enclosure')
-                enclosure.set('url', '<https://example.com/img/OGP.png>')
+                enclosure.set('url', 'https://mikamibox.com/img/OGP.png')
+                enclosure.set('length', '0')
                 enclosure.set('type', 'image/png')
-
+                
                 link = ET.SubElement(item, 'link')
-                link.text = '<https://example.com/>'
-
+                link.text = 'https://mikamibox.com/'
+        
         # 既存のitem要素を元の位置に戻す
         for item in existing_items:
             channel.append(item)
-
+        
         # XMLツリーを文字列に変換して整形
         rough_string = ET.tostring(tree, encoding='utf-8')
         pretty_xml = prettify_xml(rough_string)
-
+        
         # 整形済みXMLを保存
         with open(rss_file_path, 'w', encoding='utf-8') as f:
-            f.write('<?xml version="1.0" encoding="utf-8"?>\\n')
+            f.write('<?xml version="1.0" encoding="utf-8"?>\n')
             f.write(pretty_xml)
-
+            
         print("RSS file has been successfully updated!")
-
+        
     except Exception as e:
         print(f"Error occurred: {e}")
 
@@ -417,26 +418,20 @@ if __name__ == '__main__':
 
 
 ```text
-Python で RSS フィードを更新するプログラムを作成してください。以下の条件を満たしてください：
+RSSフィードを更新するPythonスクリプトを作成してください。以下の要件を満たすものが必要です：
 
-1. 既存の RSS ファイル（例: `rss.xml`）を読み込み、内容を更新します。
-2. 更新内容は別のテキストファイル（例: `update.txt`）から読み込みます。このファイルには、更新するタイトルが 1 行ずつ記載されています。
-3. 各更新内容（タイトル）について、以下の要素を含む新しい`item`要素を作成します：
-   - `<title>`：`update.txt`から取得したタイトルを設定
-   - `<pubDate>`：現在時刻を RFC822 形式で設定
-   - `<enclosure>`：画像 URL（例: `img/OGP.png`）、長さ`0`、タイプ`image/png`を設定
-   - `<link>`：リンク（例: `https://example.com/`）を設定
-4. 既存の`item`要素を一時的に削除し、先頭に新しい`item`要素を追加します。ただし、元の`item`要素はそのまま再配置してください。
-5. 最終的な RSS ファイルを整形（インデントを付け、余計な空行を除去）して保存します。
-6. エラーハンドリングを含め、実行中に発生するエラーを適切に処理してください。
+1. 既存のRSS XMLファイルを読み込み、新しい更新情報をチャンネルの最上部に追加する
+2. 更新情報は別のテキストファイル（update.txt）から読み込む
+3. 各更新項目に対して以下の要素を含める：
+   - タイトル（更新テキストそのもの）
+   - 公開日時（現在時刻、RFC822フォーマット）
+   - エンクロージャー（OGP画像のURL）
+   - リンク（ウェブサイトURL）
+4. XMLの整形機能を含める（インデント付きの読みやすいフォーマット）
+5. 既存の項目は保持したまま、新しい項目を追加する
+6. エラーハンドリングを実装する
 
-生成されるコードは、関数化し、以下のように構成してください：
-
-- `prettify_xml(xml_string)`：XML 文字列を整形するヘルパー関数
-- `insert_updates_to_rss(rss_file_path, update_file_path)`：RSS を更新するメイン関数
-- `if __name__ == '__main__':`ブロックで実行可能にする
-
-また、Python 標準ライブラリのみを使用してください。」
+コードは完全に機能する形で、必要なすべてのインポートと関数を含めて提供してください。また、XMLの整形のための補助関数も含めてください。
 ```
 
 
